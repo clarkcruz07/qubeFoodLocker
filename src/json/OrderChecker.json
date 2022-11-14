@@ -1,0 +1,24 @@
+{
+  "DoorStatus": [
+    {
+      "order_number": 1,
+      "door_number": "1",
+      "door_status": "1"
+    },
+    {
+      "order_number": 2,
+      "door_number": "2",
+      "door_status": "0"
+    },
+    {
+      "order_number": 3,
+      "door_number": "3",
+      "door_status": "0"
+    },
+    {
+      "order_number": 4,
+      "door_number": "4",
+      "door_status": "1"
+    }
+  ]
+}

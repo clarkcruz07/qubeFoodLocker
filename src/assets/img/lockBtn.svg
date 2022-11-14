@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="17" viewBox="0 0 37 17">
+  <g id="lockBtn" opacity="1">
+    <rect id="Rectangle_17" data-name="Rectangle 17" width="37" height="17" rx="8.5" fill="#e22424"/>
+    <path id="Icon_ionic-md-arrow-round-forward" data-name="Icon ionic-md-arrow-round-forward" d="M12.535,17.209l4.657-4.519a1.027,1.027,0,0,0,.3-.755v-.013a1.027,1.027,0,0,0-.3-.755L12.535,6.646a1,1,0,0,0-1.457,0,1.116,1.116,0,0,0,0,1.524l2.8,2.678H6.66a1.08,1.08,0,0,0,0,2.158h7.217l-2.8,2.678a1.116,1.116,0,0,0,0,1.524A1,1,0,0,0,12.535,17.209Z" transform="translate(7.254 -3.427)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+{
+  "DoorStatus": [
+    {
+      "id": "2945abfb-62bc-4b9e-b23e-be3b2cda22d1",
+      "order_number": "",
+      "door_number": "1",
+      "door_status": "1",
+      "vendor": "",
+      "status": "",
+      "serviceType": "",
+      "timestamp_in": "",
+      "timestamp_out": ""
+    },
+    {
+      "id": "18f10c6d-b636-463e-9b67-1dd5500e3579",
+      "order_number": "",
+      "door_number": "2",
+      "door_status": "1",
+      "vendor": "",
+      "status": "",
+      "serviceType": "",
+      "timestamp_in": "",
+      "timestamp_out": ""
+    },
+    {
+      "id": "e5a8c3df-68aa-42b3-94b8-33a7bb330fc5",
+      "order_number": "",
+      "door_number": "1",
+      "door_status": "1",
+      "vendor": "",
+      "status": "",
+      "serviceType": "",
+      "timestamp_in": "",
+      "timestamp_out": ""
+    },
+    {
+      "id": "ec2be68d-7bce-4860-9e22-ce8285545968",
+      "order_number": "",
+      "door_number": "2",
+      "door_status": "1",
+      "vendor": "",
+      "status": "",
+      "serviceType": "",
+      "timestamp_in": "",
+      "timestamp_out": ""
+    }
+  ]
+}
