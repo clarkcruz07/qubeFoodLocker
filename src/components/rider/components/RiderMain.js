@@ -39,14 +39,9 @@ const RiderMain = () =>{
     }
     
     useEffect(() => {
-        
-        const txtLength = document.getElementById('form-input-text').value
-        
-        
-        if(txtLength > 0){
+        if(orderNumber.length > 2){
             setDisable(false)
             document.getElementById('btn-done').classList.remove('disable')
-
         }
         else{
             setDisable(true)
@@ -63,7 +58,7 @@ const RiderMain = () =>{
             fetchData()
          },1000)
          return () => clearInterval(dataInterval)
-    },[])
+    })
 
     const options = {
         animationData: TriggerError,

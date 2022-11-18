@@ -14,6 +14,10 @@
     margin: 0;
     padding: 0;
 }
+
+img, a{
+    -webkit-user-drag: none;
+}
 /* main css */
 body{
     font-family: 'rubik';

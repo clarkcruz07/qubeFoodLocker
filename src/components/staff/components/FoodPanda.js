@@ -56,7 +56,7 @@ const FoodPanda = () =>{
                     <div>
                        <Link to="/foodpanda/opendoor" state={{ order_number: pinTxt, method: checkedMethod }}><button className="btn-pin foodpanda-pin"  disabled={pinDisable} id="set-pin"> Set Pin </button></Link> 
                     </div>                       
-                    <input type="text" className="input-number input-number-fp" maxLength='4' onChange={e => setPin(e.target.value)} />
+                    <input type="text" className="input-number input-number-fp" maxLength='4' autoComplete="off" onChange={e => setPin(e.target.value)} />
                     
                 </div>
                 <div className="row">

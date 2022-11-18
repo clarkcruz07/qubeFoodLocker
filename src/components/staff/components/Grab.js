@@ -56,7 +56,7 @@ export const Grab = () =>{
                     <div>
                        <Link to="/grab/opendoor"  state={{ order_number: pinTxt, method: checkedMethod }}> <button className='btn-pin grab-pin' disabled={pinDisable} id="set-pin"> Set Pin </button></Link>
                     </div>                        
-                    <input type="text" className="input-number input-number-gf" maxLength='3' onChange={e => setPin(e.target.value)} />
+                    <input type="text" className="input-number input-number-gf" maxLength='3' autoComplete="off" onChange={e => setPin(e.target.value)} />
                 </div>
                 <div className="row">
                     <h4>How to use QUBE Smartlockers</h4>

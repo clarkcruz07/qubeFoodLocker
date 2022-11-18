@@ -108,25 +108,29 @@ const Doors = () =>{
             else if(countArr == 2)
             {              
                 
+                                        
+                
                 const dataID = {
                     doorId: nested[0]
                 } 
                 const api = doorURL+dataID.doorId+'/open'
                 axios.get(api).then(res => {
+
                     const dataID1 = {
                         doorId: nested[1]
-                    } 
+                    }    
                     const api1 = doorURL+dataID1.doorId+'/open'
                     axios.get(api1).then(res => {
-                        /* update door */
-                    /* */
-                    
+                        
+
                     }).catch(err => { 
                         console.log(err)
-                    });
+                    });                
+
                 }).catch(err => { 
                     console.log(err)
                 });
+
                 /* update status */
                 axios.patch('http://localhost:3000/DoorStatus/'+transID[0], {
                     status: 'Claimed',
@@ -142,12 +146,13 @@ const Doors = () =>{
                     status: 'Claimed',
                     timestamp_out: timestamp,
                     door_status: '1'
-                }).then(resp => { 
+                }).then(resp => {
 
                 }).catch(error => {
                     console.log(error);
                 });
                 /* */
+
                  /* post to api */
                  axios.post('https://jobee-be.onrender.com/api/admin/add/transaction', {
                     doorNumber: nested[0] + " , " + nested[1],
@@ -158,36 +163,36 @@ const Doors = () =>{
                     timeIn : timein[0],
                     timeOut: timeout
                 }).then(resp => {
+                   /* update status */
+                    axios.patch('http://localhost:3000/DoorStatus/'+transID[0], {
+                        status: '',
+                        timestamp_out: '',
+                        door_status: '1',
+                        order_number: '',
+                        timestamp_in: '',
+                        serviceType: '',
+                        vendor: ''
+                    }).then(resp => {                   
+                        
+                    }).catch(error => {
+                        console.log(error);
+                    });
+                    /* */
                     /* update status */
-                        axios.patch('http://localhost:3000/DoorStatus/'+transID[0], {
-                            status: '',
-                            timestamp_out: '',
-                            door_status: '1',
-                            order_number: '',
-                            timestamp_in: '',
-                            serviceType: '',
-                            vendor: ''
-                        }).then(resp => {                   
-                            
-                        }).catch(error => {
-                            console.log(error);
-                        });
-                        /* */
-                        /* update status */
-                        axios.patch('http://localhost:3000/DoorStatus/'+transID[1], {
-                            status: '',
-                            timestamp_out: '',
-                            door_status: '1',
-                            order_number: '',
-                            timestamp_in: '',
-                            serviceType: '',
-                            vendor: ''
-                        }).then(resp => {                   
-                            
-                        }).catch(error => {
-                            console.log(error);
-                        });
-                        /* */
+                    axios.patch('http://localhost:3000/DoorStatus/'+transID[1], {
+                        status: '',
+                        timestamp_out: '',
+                        door_status: '1',
+                        order_number: '',
+                        timestamp_in: '',
+                        serviceType: '',
+                        vendor: ''
+                    }).then(resp => {                   
+                        
+                    }).catch(error => {
+                        console.log(error);
+                    });
+                    /* */
                 }).catch(error => {
                     console.log(error);
                 });

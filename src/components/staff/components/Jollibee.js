@@ -57,7 +57,7 @@ const Jollibee = () =>{
                     <div>
                     <Link to="/jollibee/opendoor" state={{ order_number: pinTxt, method: checkedMethod }}><button className="btn-pin jollibee-pin"  disabled={pinDisable} id="set-pin" > Set Pin </button> </Link>
                     </div>           
-                    <input type="text" className="input-number  input-number-jb" maxLength='8'  onChange={e => setPin(e.target.value)}/>
+                    <input type="text" className="input-number  input-number-jb" maxLength='8' autoComplete="off" onChange={e => setPin(e.target.value)}/>
                 </div>
                 <div className="row">
                     <h4>How to use QUBE Smartlockers</h4>
